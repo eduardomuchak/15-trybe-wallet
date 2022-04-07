@@ -23,9 +23,11 @@
 }
 
 .title-login {
-  color: rgb(20, 143, 86);
+  color: #050A30;
   font-weight: 800;
   text-align: center;
+  text-decoration: underline;
+  text-decoration-color: rgb(20, 143, 86);
 }
 
 .login-button {
