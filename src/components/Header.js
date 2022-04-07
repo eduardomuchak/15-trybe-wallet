@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
+import { BsCurrencyExchange } from 'react-icons/bs';
 import { connect } from 'react-redux';
-import Exchange from '../images/exchange.svg';
 import '../styles/Header.css';
 
 class Header extends Component {
@@ -17,21 +17,18 @@ class Header extends Component {
     const total = savedValueExpenses.reduce((acc, curr) => acc + curr, 0).toFixed(2);
     const { email } = this.props;
     return (
-      <header className='col-12 m-auto'>
+      <header className='col-12 m-auto header-bar'>
         <div className='header-container col-11 m-auto'>
-          <figure className="figure col-1">
-            <img className='exchange-image'src={ Exchange } alt='Exchange symbol' />
-          </figure>
-          <div className='info-container col-11'>
-            <div>
-              <span>Email:</span>
-              <span data-testid="email-field">{email}</span>
-            </div>
-            <div>
-              <span>Despesa Total:</span>
-              <span data-testid="total-field">{total}</span>
-              <span data-testid="header-currency-field">BRL</span>
+          <div className='icon-container col-2'>
+            <BsCurrencyExchange className='header-icon'/>
           </div>
+          <div className='expense-container col-10'>
+              <span data-testid="email-field" className='header-text'>{email}</span>
+              <div>
+                <span className='header-text'>Despesa Total:</span>
+                <span data-testid="total-field" className='header-text'><strong>{` R$ ${total}`}</strong></span>
+                {/* <span data-testid="header-currency-field">BRL</span> */}
+              </div>
         </div>
         </div>
       </header>
