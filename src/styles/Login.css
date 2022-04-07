@@ -23,7 +23,7 @@
 }
 
 .title-login {
-  color: #050A30;
+  color: rgb(20, 143, 86);
   font-weight: 800;
   text-align: center;
 }
@@ -31,24 +31,24 @@
 .login-button {
   padding: 15px;
   color: rgb(235, 238, 255);
-  background-color: rgb(35, 61, 255);
+  background-color: rgb(20, 143, 86);
   border-radius: 10px;
   border: none;
   font-weight: 800;
 }
 
 .login-button:hover {
-  background-color: rgb(61, 132, 255);
+  background-color: rgb(17, 173, 101);
   cursor: pointer;
 }
 
 .login-button:disabled {
-  background-color: rgba(35, 61, 255, 0.5);
+  background-color: rgba(20, 143, 86, 0.5);
   cursor:auto;
 }
 
 .input-form{
-  padding: 8px 15px;
+  padding: 15px 15px;
   border: none;
   background: transparent;
   display: block;
