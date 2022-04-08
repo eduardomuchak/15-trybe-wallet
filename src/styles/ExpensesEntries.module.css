@@ -1,0 +1,27 @@
+.input {
+  padding: 15px 15px;
+  border: none;
+  background: transparent;
+  display: block;
+  background-color: var(--background-green);
+  border-radius: 5px;
+  color: var(--dark-blue);
+  border: none;
+  width:100%;
+}
+
+.input-form:hover,
+.input-form:active, 
+.input-form:focus{
+  outline: none;
+  font-weight: 600;
+}
+
+.form-container {
+  background-color: var(--white);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}

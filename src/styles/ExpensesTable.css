@@ -16,7 +16,7 @@
   font-weight: 800;
   text-align: center;
   text-decoration: underline;
-  text-decoration-color: rgb(20, 143, 86);
+  text-decoration-color: var(--darker-green);
 }
 
 .content-table {
@@ -29,8 +29,8 @@
 }
 
 .content-table thead tr {
-  background-color: #378E66;
-  color: #ffffff;
+  background-color: var(--darker-green);
+  color: var(--white);
   text-align: left;
   font-weight: bold;
 }
@@ -42,15 +42,15 @@
 }
 
 .content-table tbody tr:nth-of-type(even) {
-  background-color: #f3f3f3;
+  background-color: var(--background-green);
 }
 
 .content-table tbody tr:last-of-type {
-  border-bottom: 2px solid #378E66;
+  border-bottom: 2px solid var(--darker-green);
 }
 
 .expenses-container {
-  background-color: white;
+  background-color: var(--white);
   padding: 1rem;
   border-radius: 15px;
 }

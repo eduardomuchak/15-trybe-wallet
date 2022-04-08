@@ -1,6 +1,6 @@
 .header-bar {
   display: flex;
-  background-color: rgb(20, 143, 86);
+  background-color: var(--darker-green);
   height: 60px;
 }
 
@@ -18,11 +18,11 @@
 
 .header-icon {
   font-size: 45px;
-  color: #FAB328;
+  color: var(--yellow);
 }
 
 .header-text {
-  color: white;
+  color: var(--white);
   font-weight: 500;
 }
 

@@ -17,7 +17,7 @@
 }
 
 .login-container {
-  background-color: white;
+  background-color: var(--white);
   padding: 1rem;
   border-radius: 15px;
 }
@@ -27,25 +27,25 @@
   font-weight: 800;
   text-align: center;
   text-decoration: underline;
-  text-decoration-color: rgb(20, 143, 86);
+  text-decoration-color: var(--darker-green);
 }
 
 .login-button {
   padding: 15px;
-  color: rgb(235, 238, 255);
-  background-color: rgb(20, 143, 86);
+  color: var(--input-brackground);
+  background-color: var(--darker-green);
   border-radius: 10px;
   border: none;
   font-weight: 800;
 }
 
 .login-button:hover {
-  background-color: rgb(17, 173, 101);
+  background-color: var(--medium-green);
   cursor: pointer;
 }
 
 .login-button:disabled {
-  background-color: rgba(20, 143, 86, 0.5);
+  background-color: var(--disabled-button);
   cursor:auto;
 }
 
@@ -54,9 +54,9 @@
   border: none;
   background: transparent;
   display: block;
-  background-color: #F4F6FC;
+  background-color: var(--input-brackground);
   border-radius: 5px;
-  color: #050A30;
+  color: var(--dark-blue);
   border: none;
   width:100%;
 }
@@ -65,13 +65,5 @@
 .input-form:active, 
 .input-form:focus{
   outline: none;
-}
-
-.input-form:focus {
   font-weight: 600;
-}
-.input-form:hover+.input-form-border,
-.input-form:active+.input-form-border, 
-.input-form:focus+.input-form-border{
-  width:100%;
 }

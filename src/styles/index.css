@@ -1,0 +1,40 @@
+:root {
+  --darker-green: #378E66;
+  --medium-green: #11AD65;
+  --lighter-green: #5DC692;
+  --yellow: #FAB328;
+  --dark-blue: #050A30;
+  --background-green: #DCF8EA;
+  --background-light-grey: #ECECEC;
+  --white: #FFFFFF;
+  --input-brackground: #F4F6FC;
+  --disabled-button: rgba(20, 143, 86, 0.5);
+}
+
+::selection {
+  background-color: var(--lighter-green);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: var(--background-green);
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+} 
+
+body::-webkit-scrollbar-thumb {   
+  background-color: var(--background-light-grey);
+  border-radius: 5px;   
+}
+
+h1, h2, h3 {
+  margin-bottom: 24px;
+}
