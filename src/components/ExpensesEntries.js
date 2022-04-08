@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchAllCurrenciesInfoThunk, fetchCurrenciesInfoThunk } from '../actions';
+import '../styles/ExpensesEntries.css';
 
 class ExpensesEntries extends Component {
   constructor() {

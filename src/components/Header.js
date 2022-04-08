@@ -25,7 +25,7 @@ class Header extends Component {
           <div className='expense-container col-10'>
               <span data-testid="email-field" className='header-text'>{email}</span>
               <div>
-                <span className='header-text'>Despesa Total:</span>
+                <span className='header-text'>Total de Despesas:</span>
                 <span data-testid="total-field" className='header-text'><strong>{` R$ ${total}`}</strong></span>
                 {/* <span data-testid="header-currency-field">BRL</span> */}
               </div>
