@@ -53,7 +53,7 @@ class ExpensesEntries extends Component {
       <div className={`${styles['form-container']} m-auto`}>
         <form className={`${styles.form} col-12 m-auto`}>
           <div>
-            <h3>Adicione a sua despesa</h3>
+            <h3 className='title'>Adicione a sua despesa</h3>
             <div className='row align-items-start'>
               <div className={`col-md-4 mb-3`}>
                 <label htmlFor="value" className={`col-7`}>

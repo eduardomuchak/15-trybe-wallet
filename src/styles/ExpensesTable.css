@@ -12,13 +12,13 @@
   text-align: center;
 }
 
-.title-table {
+.title {
   color: #050A30;
   font-weight: 800;
-  text-align: center;
+  text-align:center;
   text-decoration: underline;
   text-decoration-color: var(--medium-green);
-  margin-bottom: 0px;
+  margin-bottom: 20px;
 }
 
 .content-table {
