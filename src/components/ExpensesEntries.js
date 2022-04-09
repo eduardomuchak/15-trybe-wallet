@@ -52,63 +52,65 @@ class ExpensesEntries extends Component {
     return (
       <div className={`${styles['form-container']} m-auto`}>
         <form className={`${styles.form} col-12 m-auto`}>
-          <section className={`${styles['entries-container']} col-12`}>
-            <div className={`col-4`}>
-              <label htmlFor="value" className={`col-9`}>
-                <h4>
-                  Valor
-                </h4>
-                <input
-                  data-testid="value-input"
-                  type="number"
-                  name="value"
-                  id="value"
-                  placeholder="Digite o valor da Despesa"
-                  value={ value }
-                  onChange={ (event) => this.handleChange(event) }
-                  className={styles.input}
-                />
-              </label>
-              <label htmlFor="currency" className={`col-2`}>
-                <select
-                  name="currency"
-                  id="currency"
-                  value={ currency }
-                  onChange={ (event) => this.handleChange(event) }
-                  data-testid="currency-input"
-                  className={styles.select}
-                >
-                  {currencies.map((currencyName, index) => (
-                    <option key={ index } value={ currencyName }>
-                      {currencyName}
-                    </option>
-                  ))}
-                </select>
-              </label>
-            </div>
-            <div className={`col-4`}>
-              <label htmlFor="method" className={`col-11`}>
-                <h4>
-                  Forma de Pagamento
-                </h4>
-                <select
-                  name="method"
-                  id="method"
-                  value={ method }
-                  onChange={ (event) => this.handleChange(event) }
-                  data-testid="method-input"
-                  className={styles.select}
-                >
-                  {paymentMethods.map((paymentWay, index) => (
-                    <option key={ index }>
-                      {paymentWay}
-                    </option>
-                  ))}
-                </select>
-              </label>
-            </div>
-            <div className={`col-4`}>
-              <label htmlFor="tag" className={`col-12`}>
+          <div>
+            <h3>Adicione a sua despesa</h3>
+            <div className='row align-items-start'>
+              <div className={`col-md-4 mb-3`}>
+                <label htmlFor="value" className={`col-7`}>
+                  <h4>
+                    Valor
+                  </h4>
+                  <input
+                    data-testid="value-input"
+                    type="number"
+                    name="value"
+                    id="value"
+                    placeholder="Digite o valor da Despesa"
+                    value={ value }
+                    onChange={ (event) => this.handleChange(event) }
+                    className={styles.input}
+                  />
+                </label>
+                <label htmlFor="currency" className={`${styles.currency} col-5`}>
+                  <select
+                    name="currency"
+                    id="currency"
+                    value={ currency }
+                    onChange={ (event) => this.handleChange(event) }
+                    data-testid="currency-input"
+                    className={`${styles.select}`}
+                  >
+                    {currencies.map((currencyName, index) => (
+                      <option key={ index } value={ currencyName }>
+                        {currencyName}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+              </div>
+              <div className='col-md-4 mb-3'>
+                <label htmlFor="method" className={`col-12`}>
+                  <h4>
+                    Forma de Pagamento
+                  </h4>
+                  <select
+                    name="method"
+                    id="method"
+                    value={ method }
+                    onChange={ (event) => this.handleChange(event) }
+                    data-testid="method-input"
+                    className={styles.select}
+                  >
+                    {paymentMethods.map((paymentWay, index) => (
+                      <option key={ index }>
+                        {paymentWay}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+              </div>
+              <div className='col-md-4 mb-3'>
+                <label htmlFor="tag" className={`col-12`}>
                   <h4>
                     Categoria
                   </h4>
@@ -127,30 +129,31 @@ class ExpensesEntries extends Component {
                     ))}
                   </select>
                 </label>
+              </div>
+              <label htmlFor="description">
+                <h4>
+                  Descrição
+                </h4>
+                <input
+                  data-testid="description-input"
+                  type="text"
+                  name="description"
+                  id="description"
+                  placeholder="Digite a descrição da Despesa"
+                  value={ description }
+                  onChange={ (event) => this.handleChange(event) }
+                  className={styles.input}
+                />
+              </label>
+              <button
+                type="submit"
+                onClick={ this.handleSubmit }
+                className={`${styles.button} m-auto mt-4 mb-2`}
+              >
+                Adicionar despesa
+              </button>
             </div>
-          </section>
-          <label htmlFor="description" className={`mt-4`}>
-            <h4>
-              Descrição
-            </h4>
-            <input
-              data-testid="description-input"
-              type="text"
-              name="description"
-              id="description"
-              placeholder="Digite a descrição da Despesa"
-              value={ description }
-              onChange={ (event) => this.handleChange(event) }
-              className={styles.input}
-            />
-          </label>
-          <button
-            type="submit"
-            onClick={ this.handleSubmit }
-            className={`${styles.button} m-auto mt-4 mb-5`}
-          >
-            Adicionar despesa
-          </button>
+          </div>
         </form>
       </div>
     );

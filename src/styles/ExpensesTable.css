@@ -11,6 +11,7 @@
 .table-body {
   text-align: center;
 }
+
 .title-table {
   color: #050A30;
   font-weight: 800;
@@ -47,7 +48,7 @@
 }
 
 .content-table tbody tr:last-of-type {
-  border-bottom: 2px solid var(--semi-darker-green);
+  border-bottom: 2px solid var(--medium-green);
 }
 
 /* .expenses-container {
