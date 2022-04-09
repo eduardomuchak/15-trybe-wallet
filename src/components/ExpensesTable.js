@@ -8,8 +8,8 @@ class ExpensesTable extends Component {
   render() {
     const { expenses, deleteExpense } = this.props;
     return (
-      <div className='expenses-container col-11 m-auto'>
-        <h1 className='title-table mt-3'>Tabela de Despesas</h1>
+      <div className='expenses-container m-auto'>
+        <h3 className='title-table mt-3'>Tabela de Despesas</h3>
         <div className="table-responsive table-container col-12 m-auto">
           <table className="table align-middle table-css content-table">
             <thead>

@@ -3,7 +3,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { loginAction } from '../actions';
 import Logo from '../images/logo.svg';
-import '../styles/Login.css';
+import styles from '../styles/Login.module.css';
 
 class Login extends React.Component {
   constructor() {
@@ -49,14 +49,14 @@ class Login extends React.Component {
   render() {
     const { email, password, isButtonDisabled } = this.state;
     return (
-      <main className='main-login col-11 m-auto'>
-        <div className='login-container'>
-          <figure class="figure">
-            <img className='logo-image figure-img img-fluid rounded'src={ Logo } alt='Working' />
+      <main className={`col-11 m-auto ${styles['main-login']}`}>
+        <div className={styles['login-container']}>
+          <figure className="figure">
+            <img className={`${styles['logo-image']} figure-img img-fluid rounded`}src={ Logo } alt='Working' />
           </figure>
-          <h1 className='title-login mb-4'>Trybe Wallet</h1>
-          <form className='form-login'>
-            <label htmlFor="loginInput" className='form-label col-10 mb-3'>
+          <h1 className={`${styles['title-login']} mb-4`}>Trybe Wallet</h1>
+          <form className={styles['form-login']}>
+            <label htmlFor="loginInput" className={`${styles['form-label']} col-10 mb-3`}>
               <input
                 data-testid="email-input"
                 type="email"
@@ -65,7 +65,7 @@ class Login extends React.Component {
                 onChange={ (event) => this.handleChange(event) }
                 value={ email }
                 placeholder="Digite o usuário"
-                className='input-form'
+                className={styles['input-form']}
               />
             </label>
             <label htmlFor="passwordInput" className='form-label col-10 mb-3'>
@@ -77,14 +77,14 @@ class Login extends React.Component {
                 onChange={ (event) => this.handleChange(event) }
                 value={ password }
                 placeholder="Digite a senha"
-                className='input-form'
+                className={styles['input-form']}
               />
             </label>
             <button
               type="submit"
               onClick={ this.handleSubmit }
               disabled={ isButtonDisabled }
-              className="login-button col-4"
+              className={`${styles['login-button']} col-4`}
             >
               Entrar
             </button>

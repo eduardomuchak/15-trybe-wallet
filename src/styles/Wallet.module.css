@@ -1,0 +1,5 @@
+.background-container {
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 2rem;
+}
