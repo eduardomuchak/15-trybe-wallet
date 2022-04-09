@@ -54,7 +54,7 @@ class ExpensesEntries extends Component {
         <form className={`${styles.form} col-12 m-auto`}>
           <section className={`${styles['entries-container']} col-12`}>
             <div className={`col-4`}>
-              <label htmlFor="value">
+              <label htmlFor="value" className={`col-9`}>
                 <h4>
                   Valor
                 </h4>
@@ -69,7 +69,7 @@ class ExpensesEntries extends Component {
                   className={styles.input}
                 />
               </label>
-              <label htmlFor="currency">
+              <label htmlFor="currency" className={`col-2`}>
                 <select
                   name="currency"
                   id="currency"
