@@ -16,7 +16,8 @@
   font-weight: 800;
   text-align: center;
   text-decoration: underline;
-  text-decoration-color: var(--darker-green);
+  text-decoration-color: var(--medium-green);
+  margin-bottom: 0px;
 }
 
 .content-table {
@@ -29,7 +30,7 @@
 }
 
 .content-table thead tr {
-  background-color: var(--darker-green);
+  background-color: var(--semi-darker-green);
   color: var(--white);
   text-align: left;
   font-weight: bold;
@@ -46,11 +47,8 @@
 }
 
 .content-table tbody tr:last-of-type {
-  border-bottom: 2px solid var(--darker-green);
+  border-bottom: 2px solid var(--semi-darker-green);
 }
 
-.expenses-container {
-  background-color: var(--white);
-  padding: 1rem;
-  border-radius: 15px;
-}
+/* .expenses-container {
+} */

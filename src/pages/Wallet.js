@@ -10,7 +10,7 @@ class Wallet extends React.Component {
       <>
         <Header />
         <div className={`${styles['background-container']} col-11 m-auto mt-5`}>
-          <ExpensesEntries />
+          <ExpensesEntries/>
           <ExpensesTable />
         </div>
       </>

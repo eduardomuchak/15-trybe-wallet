@@ -1,7 +1,8 @@
 .header-bar {
   display: flex;
   background-color: var(--darker-green);
-  height: 60px;
+  color: white;
+  height: 80px;
 }
 
 .header-container{

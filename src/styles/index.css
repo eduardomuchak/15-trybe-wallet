@@ -1,14 +1,17 @@
 :root {
-  --darker-green: #378E66;
-  --medium-green: #11AD65;
-  --lighter-green: #5DC692;
-  --yellow: #FAB328;
+  --darker-green: #064e3b;
+  --semi-darker-green: #047857;
+  --medium-green: #059669;
+  --lighter-green: #6ee7b7;
+  --yellow: #facc15;
   --dark-blue: #050A30;
+  --blue: #1242af;
+  --lighter-blue: #3b82f6;
   --background-green: #DCF8EA;
   --background-light-grey: #ECECEC;
   --white: #FFFFFF;
   --input-brackground: #F4F6FC;
-  --disabled-button: rgba(20, 143, 86, 0.5);
+  --disabled-button: #148F5680;
 }
 
 ::selection {
