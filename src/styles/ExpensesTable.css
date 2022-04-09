@@ -11,13 +11,14 @@
 .table-body {
   text-align: center;
 }
-.title-table {
+
+.title {
   color: #050A30;
   font-weight: 800;
-  text-align: center;
+  text-align:center;
   text-decoration: underline;
   text-decoration-color: var(--medium-green);
-  margin-bottom: 0px;
+  margin-bottom: 20px;
 }
 
 .content-table {
@@ -47,7 +48,7 @@
 }
 
 .content-table tbody tr:last-of-type {
-  border-bottom: 2px solid var(--semi-darker-green);
+  border-bottom: 2px solid var(--medium-green);
 }
 
 /* .expenses-container {
