@@ -93,18 +93,19 @@ npm start
 ## Responsive:
 
 <p align="center">
+  Smartphone version
+</p>
+<p align="center">
   <img 
     src="./screenshots/smartphone.gif"
   >
 </p>
+
 <p align="center">
-  Smartphone version
+  Tablet version
 </p>
 <p align="center">
   <img 
     src="./screenshots/tablet.gif"
   >
-</p>
-<p align="center">
-  Tablet version
 </p>
