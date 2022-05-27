@@ -1,70 +1,110 @@
-# Getting Started with Create React App
+# Trybe Wallet
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img 
+    src="./screenshots/trybewallet.gif"
+  >
+</p>
+</br>
 
-## Available Scripts
+### About:
 
-In the project directory, you can run:
+TrybeWallet is a project in which an application was developed to help users manage their expenses in different currencies.
 
-### `npm start`
+This was the first project where I started to pay more attention to how accessible my application is, so I followed up with a color palette that could be within the WCAG Standard - AA and AAA.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+In addition, the project consisted of using ReactJS together with Redux to manage application states and the conversation between components and also using Bootstrap to make it responsive.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Aplication
 
-### `npm test`
+[Click here](https://trybewallet-eduardomuchak.vercel.app/) to view the final version of this project in your browser.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Progress
 
-### `npm run build`
+- [x] Programming logic for application operation
+- [x] Interface development (Mobile First)
+- [x] Interface improvement for bigger screens (Tablets and Desktops).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Bootstrap
+- JavaScript ES6+
+- React.js
+- React Router
+- React Icons (Icon library)
+- React Testing Library (RTL)
+- Redux
+- Vercel
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Methodologies:
 
-### `npm run eject`
+- Mobile First
+- Kanban
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## How to run the application:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To download the code:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+git clone git@github.com:eduardomuchak/16-trybe-wallet.git
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Enter the project root folder:
 
-## Learn More
+```
+cd 19-trybe-wallet
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Install the dependencies:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+npm install
+```
 
-### Code Splitting
+Launch the application in your browser:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+npm start
+```
 
-### Analyzing the Bundle Size
+## Screenshots:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<p align="center">
+  <img 
+    src="./screenshots/screenshot02.png"
+  >
+  Login Page
+</p>
+</br>
+<p align="center">
+  <img 
+    src="./screenshots/screenshot01.png"
+  >
+  Main Page
+</p>
+</br>
+<p align="center">
+  <img 
+    src="./screenshots/trybewallet2.gif"
+  >
+  Running Application
+</p>
 
-### Making a Progressive Web App
+## Responsive:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="center">
+  <img 
+    src="./screenshots/smartphone.gif"
+  >
+</p>
+<p align="center">
+  Smartphone version
+</p>
+<p align="center">
+  <img 
+    src="./screenshots/tablet.gif"
+  >
+</p>
+<p align="center">
+  Tablet version
+</p>
